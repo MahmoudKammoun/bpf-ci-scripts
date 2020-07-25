@@ -19,12 +19,7 @@ def sendNotification(prefix, recipientList) {
 }
 
 pipeline {
-    agent any {
-      label 'vagrant'
-    }
-    options {
-      timeout(time: 70, unit: 'MINUTES')
-    }
+    agent any 
     stages {
       stage ('Bootstrap kernel') {
         environment {
