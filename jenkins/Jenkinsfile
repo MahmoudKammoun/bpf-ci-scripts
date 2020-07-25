@@ -19,7 +19,7 @@ def sendNotification(prefix, recipientList) {
 }
 
 pipeline {
-    agent {
+    agent any {
       label 'vagrant'
     }
     options {
